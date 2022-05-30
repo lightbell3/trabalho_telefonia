@@ -76,7 +76,7 @@ export function Total(){
                 <LabelStyle>Total de linhas da Vivo: {totalLineVivo}</LabelStyle>
                 <LabelStyle>Total de linhas da Claro: {totalLineClaro}</LabelStyle>
                 <LabelStyle>Total de linhas da Tim: {totalLineTim}</LabelStyle>
-                <LabelStyle>Total de plano de 10GB: {totalPlan20}</LabelStyle>
+                <LabelStyle>Total de plano de 10GB: {totalPlan10}</LabelStyle>
                 <LabelStyle>Total de plano de 20GB: {totalPlan20}</LabelStyle>
                 <LabelStyle>Total de plano de 30GB: {totalPlan30}</LabelStyle>
                 <LabelStyle>Total de DDD 24: {totalDDD24}</LabelStyle>

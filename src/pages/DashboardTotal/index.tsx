@@ -17,6 +17,7 @@ export function Total(){
     const [totalLineVivo, setTotalLineVivo] = useState(0)
     const [totalLineClaro, setTotalLineClaro] = useState(0)
     const [totalLineTim, setTotalLineTim] = useState(0)
+    const [totalPlan10, setTotalPlan10] = useState(0)
     const [totalPlan20, setTotalPlan20] = useState(0)
     const [totalPlan30, setTotalPlan30] = useState(0)
     const [totalDDD24, setTotalDD24] = useState(0)
@@ -35,6 +36,8 @@ export function Total(){
                 .filter(tel => tel.telephone_operator ==='Claro').length))
             setTotalLineTim((telephone
                 .filter(tel => tel.telephone_operator ==='Tim').length))
+            setTotalPlan10((telephone
+                .filter(tel => tel.data_plan ==='10 GB').length))
             setTotalPlan20((telephone
                 .filter(tel => tel.data_plan ==='20 GB').length))
             setTotalPlan30((telephone
@@ -73,6 +76,7 @@ export function Total(){
                 <LabelStyle>Total de linhas da Vivo: {totalLineVivo}</LabelStyle>
                 <LabelStyle>Total de linhas da Claro: {totalLineClaro}</LabelStyle>
                 <LabelStyle>Total de linhas da Tim: {totalLineTim}</LabelStyle>
+                <LabelStyle>Total de plano de 10GB: {totalPlan20}</LabelStyle>
                 <LabelStyle>Total de plano de 20GB: {totalPlan20}</LabelStyle>
                 <LabelStyle>Total de plano de 30GB: {totalPlan30}</LabelStyle>
                 <LabelStyle>Total de DDD 24: {totalDDD24}</LabelStyle>

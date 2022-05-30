@@ -26,7 +26,7 @@ export function DashboardTelephoneLine(){
     const [lines, setLines] = useState<IDashboard[]>([]);
     const [status, setStatus] = useState('');
     const operator_drop = ["Claro", "Tim", "Vivo"];
-    const plan_drop = ["20 GB", "30 GB"];
+    const plan_drop = ["10","20 GB", "30 GB"];
 
 
     async function handleAddTelephoneLine(event: FormEvent){
